@@ -1,5 +1,6 @@
 export const products =  [
     {
+        id:"daily-vegan-plant-protein-powder-chocolate-jar",
         bestSeller: true,
         totalServings: 7,
         rating: 4.91,
@@ -11,6 +12,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2022/07/Jar-Chocolate-Listing-opt-400x400.png"
     },
     {
+        id:"origin-vegan-plant-protein-powder-chocolate",
         bestSeller: true,
         totalServings: 20,
         rating: 4.75,
@@ -22,6 +24,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2022/07/choco-pack-new-opt-400x400.png"
     },
     {
+        id:"daily-vegan-plant-protein-powder-vanilla-jar",
         bestSeller: false,
         totalServings: 7,
         rating: 4.7,

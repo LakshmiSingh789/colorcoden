@@ -7,6 +7,7 @@ import Recepies from './components/Recepies';
 import Reviews from './components/Reviews';
 import ProteinCalculator from './components/ProteinCalculator';
 import Blog from './components/Blog';
+import ProductDetail from './components/ProductDetail';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='/reviews' element={<Reviews />} />
       <Route path='/blog' element={<Blog />} />
       <Route path='/proteinCalculator' element={<ProteinCalculator />} />
+      <Route path='/product/:id' element={<ProductDetail />} />
     </Routes>
     </>
   );

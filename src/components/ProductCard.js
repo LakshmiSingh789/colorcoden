@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/productCard.css';
+import { useNavigate } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
     const {
@@ -18,8 +19,11 @@ const ProductCard = ({ product }) => {
         beginnersBox,
         trustedByMoms,
         SeniorsFriendly,
-        imagesProducts
+        imagesProducts,
+        id
     } = product;
+
+    const navigate = useNavigate();
 
     const renderRating = (rating) => {
         return (
@@ -29,8 +33,12 @@ const ProductCard = ({ product }) => {
         );
     };
 
+    const handleCardClick = () => {
+        navigate(`/product/${id}`);
+    };
+
     return (
-        <div className="product-card">
+        <div className="product-card" onClick={handleCardClick}>
             {bestSeller && <div className="product-label best-seller">Best Seller</div>}
             {isNew && <div className="product-label new">New</div>}
             {beginnersBox && <div className="product-label beginners-box">Beginners Box</div>}

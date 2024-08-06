@@ -38,10 +38,7 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
     "init": "^0.1.2",
-    "npx": "^10.2.2",
-    "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.7"
+    "npx": "^10.2.2"
   }
 }

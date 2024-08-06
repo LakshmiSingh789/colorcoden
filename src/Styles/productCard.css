@@ -1,0 +1,185 @@
+.product-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 10px;
+  border: 2px solid #f39d52;
+  border-radius: 3%;
+}
+
+.images {
+  height: 200px
+}
+
+.product-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.product-card p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.add-to-cart-button,
+.out-of-stock-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button {
+  display: block;
+  text-decoration: none;
+  border-radius: 12px;
+  border: solid 1px #f39d52;
+  background-color: #f39d52;
+  padding: 11px 22px 10px 22px;
+  color: #fef5e6 !important;
+  text-align: center;
+  font-family: CabinetGrotesk;
+  font-size: 20px;
+  font-weight: 900;
+  width: 100%;
+  margin: 0;
+}
+
+.price {
+  color: inherit;
+  opacity: .5;
+  text-decoration: line-through;
+}
+
+.discount {
+  font-size: 16px;
+  font-weight: 900;
+  color: #612d0f;
+}
+
+.offer {
+  color: #f39d52;
+  font-weight: 500;
+}
+
+.serving {
+  border: 1px solid #f39d52;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 10px;
+  padding: 6px 8px;
+  line-height: normal;
+}
+
+.productname {
+  font-weight: 700;
+  color: #612d0f;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.add-to-cart-button:hover {
+  background-color: #f7bd8a;
+}
+
+.out-of-stock-button {
+  background-color: #f5e3c2;
+  color: #612d0f;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  border: none;
+  cursor: not-allowed;
+}
+
+.product-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.best-seller {
+  background-color: #28a745;
+}
+
+.new {
+  background-color: #f39c12;
+}
+
+.beginners-box {
+  background-color: #ff69b4;
+}
+
+.trusted-by-moms {
+  background-color: #ffd700;
+}
+
+.seniors-friendly {
+  background-color: #add8e6;
+}
+
+.flavour {
+  border: 1px solid #fcd18d;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 10px;
+  line-height: 1em;
+  background-color: #ffedce;
+  display: inline-block;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+.rating {
+  font-size: 18px;
+  margin: 4px 0;
+  background-color: #ffedce;
+  font-size: 12px;
+    font-weight: 800;
+    border-radius: 10px;
+    padding: 6px 8px;
+    line-height: normal;
+}
+
+.rating-filled {
+  color: #ffd700;
+}
+
+.rating-empty {
+  color: #000;
+}
+
+.rating-filled,
+.rating-empty {
+  font-weight: bold;
+}

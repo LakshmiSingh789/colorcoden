@@ -1,0 +1,15 @@
+.product-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+  margin-right: 5px;
+}

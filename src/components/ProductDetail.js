@@ -92,29 +92,35 @@ const ProductDetail = () => {
                 </>)}
 
             {
-                productDetail.type === "kids" && (
+                (productDetail.type === "kids" || productDetail.type === "chips" || productDetail.type === "shaker") && (
                     <>
-                    <h1 className='text-3xl font-extrabold m-3'>{product.proteinName} <br/> - {product.flavour}</h1>
-                    <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 text-black">
-                        <ul className="list-disc lg:w-1/2">
-                            {productDetail.details.map((data) => (
-                                <li key={data}>{data}</li>
-                            ))}
-                        </ul>
-                        <div className="lg:w-1/2">
-                            <Carousel
-                                images={productDetail.images}
-                                height={550}
-                                width="500px"
-                                navigationDots={true}
-                                leftIcon={"<"}
-                                rightIcon={">"}
-                            />
+                        <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 text-black w-full lg:w-3/5">
+                            <ul className="list-disc lg:w-1/2">
+                                <h1 className='text-3xl font-extrabold m-3'>
+                                    {product.proteinName} <br />  {product.flavour ? "-" + product.flavour : null}
+
+                                </h1>
+                                { (productDetail.type === "kids" || productDetail.type === "chips") && productDetail.details.map((data) => (
+                                    <li key={data}>{data}</li>
+                                ))}
+                                {productDetail.type === "shaker" && (<p>{productDetail.details[0]}</p>)}
+                            </ul>
+                            <div className="lg:w-1/2">
+                                <Carousel
+                                    images={productDetail.images}
+                                    height={500}
+                                    width="100%"
+                                    navigationDots={true}
+                                    leftIcon={"<"}
+                                    rightIcon={">"}
+                                />
+                            </div>
                         </div>
-                    </div>
                     </>
                 )
             }
+
+
 
         </div>
     );

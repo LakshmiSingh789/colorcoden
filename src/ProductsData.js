@@ -589,175 +589,32 @@ export const productDetails = [
         id: "origin-700ml-shaker",
         type:"shaker",
         images: ["https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2021/12/Untitled-design.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/07/Shaker_7-opt.jpeg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/07/Shaker_6-opt.jpeg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/07/Shaker_5-opt.jpeg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/07/Shaker_4-opt.jpeg" ],
-        details: [
-            {
-                title: "What’s Inside?",
-                content: `25 gms of protein per serving,
-                            Made from clean plant sources: Blend of Canadian Golden Peas and Organic cold-pressed pumpkin seeds,
-                            A complete protein source with all 9 essential amino acids,
-                            100% free from allergens and easy to digest,
-                            Includes digestive enzymes for enhanced gut health,
-                            4.5gms of naturally-occurring BCAAs/serving`
-            },
-            {
-                title: "Origin is perfect for :",
-                content: `"Meeting all types of diets Vegetarians, Non Vegetairans, Vegan, Keto, Gluten-free, Dairy-free, Soy-free, Nut-free. ",
-                            "Perfect for any adult to meet their daily protein requirements",
-                            "Building lean muscle mass with a focus on post-workout use for recovery.",
-                            "Aiding in healthy weight management by reducing cravings.",
-                            "Boosting stamina and overall energy levels with nourishing nutrition.",
-                            "Enhancing gut health by reducing bloating and indigestion"`
-            },
-            {
-                title: "Off Limits : What we don’t do!",
-                content: `"No Artificial Sweeteners ",
-                            "No Added Sugar ",
-                            "No Preservatives ",
-                            "No Artificial Binders ",
-                            "No Gums or Fillers ",
-                            "No nature identical or artificial flavours",
-                            "No Misleading Labels."`
-            }
-        ]
+        details: [`Blend your Origin protein better and faster with your own Origin Nutrition shaker. Convenient size and ideal for carrying on the go. Storage capacity of 700ml. Easy-to-use, clean, and maintain, Leak-Proof, Light weight and BPA-free, standard car cup holder size.
+        *The shaker lid color may vary.
+        Read more`]
     }, 
     {
         id: "mojo-pops-protein-chips-sour-cream-and-onion-pack-of-6",
         type:"chips",
         images: ["https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/amazon-mojo-sour-cream.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/Untitled-design-29.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/3-1.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/Mojo-Infographic-sour-cream.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/Untitled-design-28.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/Info-chips-sour-cream-1.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/FB-Carousel-3-psd.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/08/SC_B.jpg" ],
-        details: [
-            {
-                title: "What’s Inside?",
-                content: `25 gms of protein per serving,
-                            Made from clean plant sources: Blend of Canadian Golden Peas and Organic cold-pressed pumpkin seeds,
-                            A complete protein source with all 9 essential amino acids,
-                            100% free from allergens and easy to digest,
-                            Includes digestive enzymes for enhanced gut health,
-                            4.5gms of naturally-occurring BCAAs/serving`
-            },
-            {
-                title: "Origin is perfect for :",
-                content: `"Meeting all types of diets Vegetarians, Non Vegetairans, Vegan, Keto, Gluten-free, Dairy-free, Soy-free, Nut-free. ",
-                            "Perfect for any adult to meet their daily protein requirements",
-                            "Building lean muscle mass with a focus on post-workout use for recovery.",
-                            "Aiding in healthy weight management by reducing cravings.",
-                            "Boosting stamina and overall energy levels with nourishing nutrition.",
-                            "Enhancing gut health by reducing bloating and indigestion"`
-            },
-            {
-                title: "Off Limits : What we don’t do!",
-                content: `"No Artificial Sweeteners ",
-                            "No Added Sugar ",
-                            "No Preservatives ",
-                            "No Artificial Binders ",
-                            "No Gums or Fillers ",
-                            "No nature identical or artificial flavours",
-                            "No Misleading Labels."`
-            }
-        ]
+       details: ["10 gms protein per pack","Not Fried, Not Baked","Compression Popped Protein Chips","100% Clean and Plant Based","No Potato","Lipsmacking Pudina Chutney Flavour","Made with lentils, veggies and pea protein"]
     },
     {
         id: "mojo-pops-protein-chips-pudina-chutney-pack-of-6",
         type:"chips",
         images: ["https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/amazon-mojo-pudina.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/Untitled-design-18.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/1-1.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/Mojo-Infographic-Pudina.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/Untitled-design-19.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/Info-chips-pudina-1.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/FB-Carousel-3-psd.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/08/PC_B.jpg" ],
-        details: [
-            {
-                title: "What’s Inside?",
-                content: `25 gms of protein per serving,
-                            Made from clean plant sources: Blend of Canadian Golden Peas and Organic cold-pressed pumpkin seeds,
-                            A complete protein source with all 9 essential amino acids,
-                            100% free from allergens and easy to digest,
-                            Includes digestive enzymes for enhanced gut health,
-                            4.5gms of naturally-occurring BCAAs/serving`
-            },
-            {
-                title: "Origin is perfect for :",
-                content: `"Meeting all types of diets Vegetarians, Non Vegetairans, Vegan, Keto, Gluten-free, Dairy-free, Soy-free, Nut-free. ",
-                            "Perfect for any adult to meet their daily protein requirements",
-                            "Building lean muscle mass with a focus on post-workout use for recovery.",
-                            "Aiding in healthy weight management by reducing cravings.",
-                            "Boosting stamina and overall energy levels with nourishing nutrition.",
-                            "Enhancing gut health by reducing bloating and indigestion"`
-            },
-            {
-                title: "Off Limits : What we don’t do!",
-                content: `"No Artificial Sweeteners ",
-                            "No Added Sugar ",
-                            "No Preservatives ",
-                            "No Artificial Binders ",
-                            "No Gums or Fillers ",
-                            "No nature identical or artificial flavours",
-                            "No Misleading Labels."`
-            }
-        ]
+        details: ["10 gms protein per pack","Not Fried, Not Baked","Compression Popped Protein Chips","100% Clean and Plant Based","No Potato","Lipsmacking Pudina Chutney Flavour","Made with lentils, veggies and pea protein"]
     },
     {
         id: "mojo-pops-protein-chips-tangy-tomato-pack-of-6",
         type:"chips",
         images: ["https://originnutrition.in/wp-content/uploads/2023/06/amazon-mojo-tomato.png", "https://originnutrition.in/wp-content/uploads/2023/06/Untitled-design-22.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/2-1.png", "https://originnutrition.in/wp-content/uploads/2023/06/Mojo-Infographic-Tomato.png", "https://originnutrition.in/wp-content/uploads/2023/06/Untitled-design-24.png", "https://originnutrition.in/wp-content/uploads/2023/06/Info-chips-tomato-1.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/FB-Carousel-3-psd.png", "https://originnutrition.in/wp-content/uploads/2023/08/TT_B.jpg" ],
-        details: [
-            {
-                title: "What’s Inside?",
-                content: `25 gms of protein per serving,
-                            Made from clean plant sources: Blend of Canadian Golden Peas and Organic cold-pressed pumpkin seeds,
-                            A complete protein source with all 9 essential amino acids,
-                            100% free from allergens and easy to digest,
-                            Includes digestive enzymes for enhanced gut health,
-                            4.5gms of naturally-occurring BCAAs/serving`
-            },
-            {
-                title: "Origin is perfect for :",
-                content: `"Meeting all types of diets Vegetarians, Non Vegetairans, Vegan, Keto, Gluten-free, Dairy-free, Soy-free, Nut-free. ",
-                            "Perfect for any adult to meet their daily protein requirements",
-                            "Building lean muscle mass with a focus on post-workout use for recovery.",
-                            "Aiding in healthy weight management by reducing cravings.",
-                            "Boosting stamina and overall energy levels with nourishing nutrition.",
-                            "Enhancing gut health by reducing bloating and indigestion"`
-            },
-            {
-                title: "Off Limits : What we don’t do!",
-                content: `"No Artificial Sweeteners ",
-                            "No Added Sugar ",
-                            "No Preservatives ",
-                            "No Artificial Binders ",
-                            "No Gums or Fillers ",
-                            "No nature identical or artificial flavours",
-                            "No Misleading Labels."`
-            }
-        ]
+        details: ["10 gms protein per pack","Not Fried, Not Baked","Compression Popped Protein Chips","100% Clean and Plant Based","No Potato","Lipsmacking Pudina Chutney Flavour","Made with lentils, veggies and pea protein"]
     },
     {
         id: "mojo-pops-protein-chips-assorted-pack",
         type:"chips",
         images: ["https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/amazon-mojo-assaulted.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/07/Mojo_Rotate_Content_Image-1.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/Info-chips-pudina-1.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/Untitled-design-29.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/Mojo-Infographic-Pudina.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/FB-Carousel-3-psd.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/1-1.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/2-1.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/06/3-1.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/08/PC_B.jpg" ],
-        details: [
-            {
-                title: "What’s Inside?",
-                content: `25 gms of protein per serving,
-                            Made from clean plant sources: Blend of Canadian Golden Peas and Organic cold-pressed pumpkin seeds,
-                            A complete protein source with all 9 essential amino acids,
-                            100% free from allergens and easy to digest,
-                            Includes digestive enzymes for enhanced gut health,
-                            4.5gms of naturally-occurring BCAAs/serving`
-            },
-            {
-                title: "Origin is perfect for :",
-                content: `"Meeting all types of diets Vegetarians, Non Vegetairans, Vegan, Keto, Gluten-free, Dairy-free, Soy-free, Nut-free. ",
-                            "Perfect for any adult to meet their daily protein requirements",
-                            "Building lean muscle mass with a focus on post-workout use for recovery.",
-                            "Aiding in healthy weight management by reducing cravings.",
-                            "Boosting stamina and overall energy levels with nourishing nutrition.",
-                            "Enhancing gut health by reducing bloating and indigestion"`
-            },
-            {
-                title: "Off Limits : What we don’t do!",
-                content: `"No Artificial Sweeteners ",
-                            "No Added Sugar ",
-                            "No Preservatives ",
-                            "No Artificial Binders ",
-                            "No Gums or Fillers ",
-                            "No nature identical or artificial flavours",
-                            "No Misleading Labels."`
-            }
-        ]
+        details: ["10 gms protein per pack","Not Fried, Not Baked","Compression Popped Protein Chips","100% Clean and Plant Based","No Potato","Lipsmacking Pudina Chutney Flavour","Made with lentils, veggies and pea protein"]
     },
 ]

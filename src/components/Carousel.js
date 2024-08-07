@@ -44,64 +44,61 @@ const Carousel = ({
 
   return (
     <>
-    <div className="relative border-[3px] rounded-3xl border-orange-200" style={{ width }}>
-      <div className="relative" style={{ height }}>
-        <div className="flex justify-between absolute w-full h-full top-0 font-extrabold text-amber-900 text-2xl">
-          <button
-            onClick={goLeft}
-            className="z-10 p-2 self-center"
-            aria-label="Previous"
-          >
-            {leftIcon}
-          </button>
-          <button
-            onClick={goRight}
-            className="z-10 p-2 self-center"
-            aria-label="Next"
-          >
-            {rightIcon}
-          </button>
-        </div>
-        <div className="overflow-hidden w-full h-full">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Slide ${index}`}
-              className={`object-cover absolute transition duration-500 rounded-3xl ease-in-out transform ${
-                currentIndex === index ? "opacity-100" : "opacity-0"
-              }`}
-              style={{ height, width }}
-              onError={handleImageError}
-            />
-          ))}
+      <div className={`relative ${productDetail.type === "adult" ? "border-[3px] rounded-3xl border-orange-200" : null}`} style={{ width }}>
+        <div className="relative" style={{ height }}>
+          <div className="flex justify-between absolute w-full h-full top-0 font-extrabold text-amber-900 text-2xl">
+            <button
+              onClick={goLeft}
+              className="z-10 p-2 self-center"
+              aria-label="Previous"
+            >
+              {leftIcon}
+            </button>
+            <button
+              onClick={goRight}
+              className="z-10 p-2 self-center"
+              aria-label="Next"
+            >
+              {rightIcon}
+            </button>
+          </div>
+          <div className="overflow-hidden w-full h-full">
+            {images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Slide ${index}`}
+                className={`object-cover absolute transition duration-500 rounded-3xl ease-in-out transform ${currentIndex === index ? "opacity-100" : "opacity-0"
+                  }`}
+                style={{ height, width }}
+                onError={handleImageError}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-    {productDetail.type === "adult" && navigationDots && (
+      {productDetail.type === "adult" && navigationDots && (
         <div className="flex justify-center space-x-2 mt-2">
           {images.map((image, index) => (
             <img
               key={index}
               src={image}
               alt={`Thumbnail ${index}`}
-              className={`h-12 w-12 object-cover cursor-pointer border-2 ${
-                index === currentIndex ? "border-red-500" : "border-transparent"
-              }`}
+              className={`h-12 w-12 object-cover cursor-pointer border-2 ${index === currentIndex ? "border-red-500" : "border-transparent"
+                }`}
               onClick={() => setCurrentIndex(index)}
               onError={handleImageError}
             />
           ))}
         </div>
       )}
-       {productDetail.type === "kids" && navigationDots && (
+      {(productDetail.type === "kids" || productDetail.type === "chips" || productDetail.type === "shaker") && navigationDots && (
         <div className="flex justify-center space-x-2 mt-2">
           {images.map((_, index) => (
             <button
               key={index}
-              className={`h-2 w-2 bg-gray-400 rounded-full ${
-                index === currentIndex ? "bg-red-500" : ""
-              }`}
+              className={`h-2 w-2 bg-gray-400 rounded-full ${index === currentIndex ? "bg-red-500" : ""
+                }`}
               onClick={() => setCurrentIndex(index)}
               aria-label={`Go to slide ${index + 1}`}
             />

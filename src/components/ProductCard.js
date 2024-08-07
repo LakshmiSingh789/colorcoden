@@ -5,8 +5,6 @@ import { useNavigate } from 'react-router-dom';
 const ProductCard = ({ product }) => {
     const {
         proteinName,
-        shaker,
-        proteinChips,
         flavour,
         totalServings,
         rating,
@@ -38,7 +36,7 @@ const ProductCard = ({ product }) => {
     };
 
     return (
-        <div className="product-card" onClick={handleCardClick}>
+        <div className="product-card cursor-pointer" onClick={handleCardClick}>
             {bestSeller && <div className="product-label best-seller">Best Seller</div>}
             {isNew && <div className="product-label new">New</div>}
             {beginnersBox && <div className="product-label beginners-box">Beginners Box</div>}
@@ -52,7 +50,7 @@ const ProductCard = ({ product }) => {
                 {totalServings !== null && totalServings !== 0 &&
                     <span className='serving'> {totalServings} Servings</span>}
             </p>}
-            <h3 className='productname'>{proteinName || shaker || proteinChips}</h3>
+            <h3 className='productname'>{proteinName}</h3>
             {flavour && <p className='flavour'> {flavour}</p>}
             {productPrice !== null && productPrice !== 0 && <p> <span className='price'>₹{productPrice}</span> {discountedPrice !== null && discountedPrice !== 0 && (
                 <span className='discount'>

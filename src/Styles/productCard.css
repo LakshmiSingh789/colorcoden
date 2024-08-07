@@ -22,11 +22,12 @@
   justify-content: space-between;
   margin: 20px 10px;
   border: 2px solid #f39d52;
+  background-color: #fff3e8;
   border-radius: 3%;
 }
 
 .images {
-  height: 200px
+  height: 250px
 }
 
 .product-card h3 {

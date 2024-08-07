@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Shop from './components/Shop';
 import AboutUs from './components/AboutUs';
+import Home from './components/Home';
 import Recepies from './components/Recepies';
 import Reviews from './components/Reviews';
 import ProteinCalculator from './components/ProteinCalculator';
@@ -14,6 +15,7 @@ function App() {
     <>
     <Header/>
     <Routes>
+    <Route path='/' element={<Home />} />
       <Route path='/shop' element={<Shop />} />
       <Route path='/aboutus' element={<AboutUs />} />
       <Route path='/recepies' element={<Recepies />} />

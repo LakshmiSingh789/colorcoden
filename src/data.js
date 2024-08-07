@@ -36,6 +36,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2022/07/Jar-Vanilla-Listing-new-opt-400x400.png"
     },
     {
+        id:"origin-vegan-plant-protein-powder-vanilla",
         bestSeller: false,
         totalServings: 20,
         rating: 4.75,
@@ -47,6 +48,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2022/07/vanilla-pack-new-opt-400x400.png"
     },
     {
+        id:"daily-vegan-plant-protein-powder-strawberry-jar",
         bestSeller: false,
         totalServings: 7,
         rating: 4.83,
@@ -58,6 +60,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2022/07/Jar-Strawberry-Listing-new-opt-400x400.png"
     },
     {
+        id:"origin-vegan-plant-protein-powder-strawberry",
         bestSeller: false,
         totalServings: 20,
         rating: 4.78,
@@ -69,6 +72,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2022/07/strawberry-pack-new-opt-400x400.png"
     },
     {
+        id:"daily-vegan-plant-protein-powder-unflavoured-jar",
         bestSeller: false,
         totalServings: 8,
         rating: 4.79,
@@ -80,6 +84,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2022/07/Jar-Unflavoured-Listing-new-opt-400x400.png"
     },
     {
+        id:"origin-vegan-plant-protein-powder",
         bestSeller: false,
         totalServings: 32,
         rating: 4.78,
@@ -91,6 +96,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2022/07/unflavoured-pack-new-opt-400x400.png"
     },
     {
+        id:"daily-vegan-plant-protein-powder-mango-mania-jar",
         bestSeller: false,
         totalServings: 7,
         rating: 4.83,
@@ -102,6 +108,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2023/04/mango-jar-for-website-400x400.png"
     },
     {
+        id:"daily-plant-protein-chocolate-trial-pack",
         new: true,
         beginnersBox: true,
         bestSeller: false,
@@ -115,6 +122,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2023/12/mock1-1-400x400.png"
     },
     {
+        id:"origin-vegan-plant-protein-powder-multi-flavour",
         new: false,
         beginnersBox: true,
         bestSeller: false,
@@ -128,6 +136,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2021/11/MF-Pack-mockup-Front-1--400x400.png"
     },
     {
+        id:"daily-vegan-plant-protein-powder-coffee-caramel-jar",
         new: false,
         beginnersBox: false,
         bestSeller: false,
@@ -142,6 +151,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2022/07/Jar-Coffee-Listing-new-opt-400x400.png"
     },
     {
+        id:"daily-vegan-plant-protein-powder-coffee-caramel",
         new: false,
         beginnersBox: false,
         bestSeller: false,
@@ -156,6 +166,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2022/07/coffee-pack-new-opt-400x400.png"
     },
     {
+        id:"go-go-fuel-for-kids-champions-chocolate", 
         new: false,
         beginnersBox: false,
         bestSeller: false,
@@ -171,6 +182,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2023/04/choco-jar-4-7-website-1-1-400x400.png"
     },
     {
+        id:"go-go-fuel-for-kids-champions-chocolate-ages-8-12", 
         new: false,
         beginnersBox: false,
         bestSeller: false,
@@ -186,6 +198,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2023/05/choco-jar-8-12-website-1-400x400.png"
     },
     {
+        id:"go-go-fuel-for-kids-vibrant-vanilla",
         new: false,
         beginnersBox: false,
         bestSeller: false,
@@ -201,6 +214,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2023/04/van-jar-4-7-website-400x400.png"
     },
     {
+        id:"go-go-fuel-for-kids-vibrant-vanilla-ages-8-12",
         new: false,
         beginnersBox: false,
         bestSeller: false,
@@ -216,6 +230,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2023/04/van-jar-4-7-website-400x400.png"
     },
     {
+        id:"origin-vegan-protein-for-seniors-strawberry",
         new: false,
         beginnersBox: false,
         bestSeller: false,
@@ -231,6 +246,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2023/02/senior-care-jar_New-400x400.png"
     },
     {
+        id:"plant-based-biotin",
         new: false,
         beginnersBox: false,
         bestSeller: false,
@@ -246,6 +262,7 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2022/07/Biotin-opt-400x400.png"
     },
     {
+        id:"supergreens",
         new: false,
         beginnersBox: false,
         bestSeller: false,
@@ -261,12 +278,13 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2023/02/supergreens-jar-1-400x400.png"
     },
     {
+        id:"origin-700ml-shaker",
         new: false,
         beginnersBox: false,
         bestSeller: false,
         totalServings: null,
         rating: 5,
-        shaker: "Origin 700ml Shaker",
+        proteinName: "Origin 700ml Shaker",
         productPrice: 400,
         discountedPrice: 352,
         offerPercentage: 12,
@@ -275,12 +293,13 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2021/12/Untitled-design-400x400.png"
     },
     {
+        id:"mojo-pops-protein-chips-sour-cream-and-onion-pack-of-6",
         new: false,
         beginnersBox: false,
         bestSeller: false,
         totalServings: null,
         rating: null,
-        proteinChips: "Mojo Pops Protein Chips (6 Packs)",
+        proteinName: "Mojo Pops Protein Chips (6 Packs)",
         flavour: "Sour Cream & Onion",
         productPrice: 594,
         discountedPrice: null,
@@ -290,12 +309,13 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2023/06/aCcaac-400x400.png"
     },
     {
+        id:"mojo-pops-protein-chips-pudina-chutney-pack-of-6",
         new: false,
         beginnersBox: false,
         bestSeller: false,
         totalServings: null,
         rating: 4,
-        proteinChips: "Mojo Pops Protein Chips (6 Packs)",
+        proteinName: "Mojo Pops Protein Chips (6 Packs)",
         flavour: "Pudina Chutney",
         productPrice: 594,
         discountedPrice: null,
@@ -305,12 +325,13 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2023/06/pudhina-product-400x400.png"
     },
     {
+        id:"mojo-pops-protein-chips-tangy-tomato-pack-of-6",
         new: false,
         beginnersBox: false,
         bestSeller: false,
         totalServings: null,
         rating: null,
-        proteinChips: "Mojo Pops Protein Chips (6 Packs)",
+        proteinName: "Mojo Pops Protein Chips (6 Packs)",
         flavour: "Tangy Tomato",
         productPrice: 594,
         discountedPrice: null,
@@ -320,12 +341,13 @@ export const products =  [
         imagesProducts:"https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/https://originnutrition.in/wp-content/uploads/2023/06/tomatp-product-page-400x400.png"
     },
     {
+        id:"mojo-pops-protein-chips-assorted-pack",
         new: false,
         beginnersBox: false,
         bestSeller: false,
         totalServings: null,
         rating: 4.67,
-        proteinChips: "Mojo Pops Protein Chips (6 Packs)",
+        proteinName: "Mojo Pops Protein Chips (6 Packs)",
         flavour: "Assorted Pack",
         productPrice: 594,
         discountedPrice: null,

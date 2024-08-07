@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { productDetails } from "../ProductsData";
+import { useParams } from 'react-router-dom';
 
 const Carousel = ({
   images,
@@ -9,6 +11,8 @@ const Carousel = ({
   leftIcon = "◀",
   rightIcon = "▶",
 }) => {
+  const { id } = useParams();
+  const productDetail = productDetails.find((p) => p.id === id);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goLeft = () => {
@@ -74,7 +78,7 @@ const Carousel = ({
         </div>
       </div>
     </div>
-    {navigationDots && (
+    {productDetail.type === "adult" && navigationDots && (
         <div className="flex justify-center space-x-2 mt-2">
           {images.map((image, index) => (
             <img
@@ -86,6 +90,20 @@ const Carousel = ({
               }`}
               onClick={() => setCurrentIndex(index)}
               onError={handleImageError}
+            />
+          ))}
+        </div>
+      )}
+       {productDetail.type === "kids" && navigationDots && (
+        <div className="flex justify-center space-x-2 mt-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              className={`h-2 w-2 bg-gray-400 rounded-full ${
+                index === currentIndex ? "bg-red-500" : ""
+              }`}
+              onClick={() => setCurrentIndex(index)}
+              aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>

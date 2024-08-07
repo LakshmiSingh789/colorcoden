@@ -51,42 +51,71 @@ const ProductDetail = () => {
                 openedColor="black"
                 openedColorStrength="600"
             />
-            <div className='flex flex-wrap mt-5'>
-                <div className='w-full lg:w-1/2 mb-5 lg:mb-0'>
-                    <Carousel
-                        images={productDetail.images}
-                        height={500}
-                        width="100%"
-                        navigationDots={true}
-                        leftIcon={"<"}
-                        rightIcon={">"}
-                    />
-                </div>
-                <div className='w-full lg:w-1/2 flex flex-col items-start justify-center lg:min-h-[500px]'>
-                    <div className='px-5'>
-                        {productFeatures.map((item, index) => (
-                            <img
-                                src={item}
-                                alt={`product-feature-${index}`}
-                                key={index}
-                                className='mb-3 h-20 w-20'
+            {productDetail.type === "adult" && (
+                <>
+                    <div className='flex flex-wrap mt-5'>
+                        <div className='w-full lg:w-1/2 mb-5 lg:mb-0'>
+                            <Carousel
+                                images={productDetail.images}
+                                height={500}
+                                width="100%"
+                                navigationDots={true}
+                                leftIcon={"<"}
+                                rightIcon={">"}
                             />
-                        ))}
+                        </div>
+                        <div className='w-full lg:w-1/2 flex flex-col items-start justify-center lg:min-h-[500px]'>
+                            <div className='px-5'>
+                                {productFeatures.map((item, index) => (
+                                    <img
+                                        src={item}
+                                        alt={`product-feature-${index}`}
+                                        key={index}
+                                        className='mb-3 h-20 w-20'
+                                    />
+                                ))}
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div className='mt-20'>
-                <Accordion
-                    items={productDetailsAccordion()}
-                    headerSize="20"
-                    contentSize="18"
-                    accordionWidth="600"
-                    toggleDown={toggleDown}
-                    toggleUp={toggleUp}
-                    multiToggleOpen={true}
-                />
-            </div>
+                    <div className='mt-20'>
+                        <Accordion
+                            items={productDetailsAccordion()}
+                            headerSize="20"
+                            contentSize="18"
+                            accordionWidth="600"
+                            toggleDown={toggleDown}
+                            toggleUp={toggleUp}
+                            multiToggleOpen={true}
+                        />
+                    </div>
+                </>)}
+
+            {
+                productDetail.type === "kids" && (
+                    <>
+                    <h1 className='text-3xl font-extrabold m-3'>{product.proteinName} <br/> - {product.flavour}</h1>
+                    <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 text-black">
+                        <ul className="list-disc lg:w-1/2">
+                            {productDetail.details.map((data) => (
+                                <li key={data}>{data}</li>
+                            ))}
+                        </ul>
+                        <div className="lg:w-1/2">
+                            <Carousel
+                                images={productDetail.images}
+                                height={550}
+                                width="500px"
+                                navigationDots={true}
+                                leftIcon={"<"}
+                                rightIcon={">"}
+                            />
+                        </div>
+                    </div>
+                    </>
+                )
+            }
+
         </div>
     );
 };

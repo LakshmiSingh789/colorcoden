@@ -36,12 +36,22 @@ const ProductCard = ({ product }) => {
     };
 
     return (
-        <div className="product-card cursor-pointer" onClick={handleCardClick}>
-            {bestSeller && <div className="product-label best-seller">Best Seller</div>}
-            {isNew && <div className="product-label new">New</div>}
-            {beginnersBox && <div className="product-label beginners-box">Beginners Box</div>}
-            {trustedByMoms && <div className="product-label trusted-by-moms">Trusted by Moms</div>}
-            {SeniorsFriendly && <div className="product-label seniors-friendly">Senior Friendly</div>}
+        <div className="product-card cursor-pointer" onClick={handleCardClick} 
+        style={{ 
+            boxShadow: '0 0 0 0 transparent', 
+            transition: 'all 0.3s ease-in-out' 
+          }} 
+          onMouseEnter={(e) => {
+            e.currentTarget.style.boxShadow = '8px 8px 15px rgba(255, 140, 0)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.boxShadow = '0 0 0 rgba(255, 87, 34, 0)';
+          }}>
+            {bestSeller && <div className="product-label best-seller">BESTSELLER</div>}
+            {isNew && <div className="new">NEW</div>}
+            {beginnersBox && <div className="product-label beginners-box">BEGINNERS BOX</div>}
+            {trustedByMoms && <div className="product-label trusted-by-moms">TRUSTED BY MOMS</div>}
+            {SeniorsFriendly && <div className="product-label seniors-friendly">SENIOR FRIENDLY</div>}
 
             <img src={imagesProducts} alt='productsimage' className='images' />
 
@@ -52,7 +62,7 @@ const ProductCard = ({ product }) => {
             </p>}
             <h3 className='productname'>{proteinName}</h3>
             {flavour && <p className='flavour'> {flavour}</p>}
-            {productPrice !== null && productPrice !== 0 && <p> <span className='price'>₹{productPrice}</span> {discountedPrice !== null && discountedPrice !== 0 && (
+            {productPrice !== null && productPrice !== 0 && <p> <span className={`${discountedPrice ? 'price' : 'oriprice'}`}> ₹{productPrice}</span> {discountedPrice !== null && discountedPrice !== 0 && (
                 <span className='discount'>
                     ₹{discountedPrice}<span className='offer'> {offerPercentage ? `(${offerPercentage}% off)` : ''}</span>
                 </span>

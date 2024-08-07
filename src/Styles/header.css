@@ -1,10 +1,10 @@
 .header-container {
     background-color: #ffebda;
-    padding: 16px;
+    padding: 35px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .header-container:hover{
-    background-color: #fcead0;
+    background-color: #fcddc4;
 }
 
 .header-nav {
@@ -22,24 +22,25 @@
 }
 
 .header-logo {
-    height: 40px;
+    height: 80px;
     margin-right: 20px;
 }
 
 .header-link {
     color: #612d0f;
-    font-size: 20px;
     text-decoration: none;
     font-weight: 700;
     transform-origin: center center;
-    font-size: 16px;
+    font-size: 20px;
     transition: color 0.3s, background-color 0.3s;
     padding: 8px 12px;
 }
 
 .header-link.protein-calculator {
+    padding: 4px 10px;
+    font-size: 16px;
     background-color: #fcd18d;
-    border-radius: 4px;
+    border-radius: 15px;
 }
 
 .header-actions {
@@ -50,7 +51,7 @@
 
 .header-search {
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 30px;
     border: 1px solid #ccc;
     outline: none;
     width: 200px;

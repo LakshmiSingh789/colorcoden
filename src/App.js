@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Shop from './components/Shop';
@@ -11,19 +11,21 @@ import Blog from './components/Blog';
 import ProductDetail from './components/ProductDetail';
 
 function App() {
+  const location = useLocation();
+
   return (
     <>
-    <Header/>
-    <Routes>
-    <Route path='/' element={<Home />} />
-      <Route path='/shop' element={<Shop />} />
-      <Route path='/aboutus' element={<AboutUs />} />
-      <Route path='/recepies' element={<Recepies />} />
-      <Route path='/reviews' element={<Reviews />} />
-      <Route path='/blog' element={<Blog />} />
-      <Route path='/proteinCalculator' element={<ProteinCalculator />} />
-      <Route path='/product/:id' element={<ProductDetail />} />
-    </Routes>
+      {location.pathname !== '/' && <Header />}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/shop' element={<Shop />} />
+        <Route path='/aboutus' element={<AboutUs />} />
+        <Route path='/recepies' element={<Recepies />} />
+        <Route path='/reviews' element={<Reviews />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/proteinCalculator' element={<ProteinCalculator />} />
+        <Route path='/product/:id' element={<ProductDetail />} />
+      </Routes>
     </>
   );
 }

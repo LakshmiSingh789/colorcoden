@@ -1,3 +1,5 @@
+export const productFeatures = ["https://cdn.shortpixel.ai/spai/ret_img/originnutrition.in/wp-content/uploads/2024/07/USP-1-1.webp", "https://cdn.shortpixel.ai/spai/ret_img/originnutrition.in/wp-content/uploads/2024/07/USP-2-1.webp","https://cdn.shortpixel.ai/spai/ret_img/originnutrition.in/wp-content/uploads/2024/07/USP-3-1.webp","https://cdn.shortpixel.ai/spai/ret_img/originnutrition.in/wp-content/uploads/2024/07/USP-4-1.webp"]
+
 export const productDetails = [
     {
         id: "daily-vegan-plant-protein-powder-chocolate-jar",

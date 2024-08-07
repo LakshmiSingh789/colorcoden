@@ -40,7 +40,7 @@ const Carousel = ({
   };
 
   return (
-    <div className="relative" style={{ width, height }}>
+    <div className="relative mt-5" style={{ width, height }}>
       <div className="flex justify-between absolute w-full h-full top-0">
         <button
           onClick={goLeft}

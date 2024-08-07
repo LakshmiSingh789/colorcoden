@@ -6,14 +6,6 @@ const AccordionItem = ({
   index,
   isOpen,
   onToggle,
-  headerBgColor,
-  headerBgColorStrength,
-  accordionTitleColor,
-  accordionTitleColorStrength,
-  contentBgColor,
-  contentBgColorStrength,
-  contentColor,
-  contentColorStrength,
   headerSize,
   contentSize,
   imageHeight,
@@ -24,53 +16,44 @@ const AccordionItem = ({
   const { title, content, imageUrl } = item;
 
   const accordionStyle = {
-    headerBgColor:
-      tw`bg-${headerBgColor}-${headerBgColorStrength}` || "bg-blue-500",
-    accordionTitleColor:
-      tw`text-${accordionTitleColor}-${accordionTitleColorStrength}` ||
-      "text-white",
-    contentBgColor:
-      tw`bg-${contentBgColor}-${contentBgColorStrength}` || "bg-gray-300",
-    contentColor:
-      tw`text-${contentColor}-${contentColorStrength}` || "text-red-600",
     contentSize: tw`text-[${contentSize}px]` || "text-md",
     headerSize: tw`text-[${headerSize}px]` || "text-xl",
     imageHeight: tw`h-[${imageHeight}px]` || "h-20",
   };
 
   return (
-    <div className={`mb-2 border rounded overflow-hidden`}>
+    <div className={`mb-2 box-border rounded overflow-hidden`}>
       <div
-        className={`flex justify-between p-2 cursor-pointer ${accordionStyle.headerBgColor} ${accordionStyle.accordionTitleColor}`}
+        className={`flex justify-between p-2 cursor-pointer border-b-[3px] border-amber-900`}
         onClick={() => onToggle(index)}
       >
-        <div className={`${accordionStyle.headerSize} font-semibold`}>
+        <div className={`${accordionStyle.headerSize} font-extrabold`}>
           {title}
         </div>
         {multiToggleOpen ? (
           isOpen ? (
-            <span className={`${accordionStyle.accordionTitleColor}`}>
+            <span>
               {toggleUp}
             </span>
           ) : (
-            <span className={`${accordionStyle.accordionTitleColor}`}>
+            <span>
               {toggleDown}
             </span>
           )
         ) : (
           isOpen ? (
-            <span className={`${accordionStyle.accordionTitleColor}`}>
+            <span>
               {toggleUp}
             </span>
           ) : (
-            <span className={`${accordionStyle.accordionTitleColor}`}>
+            <span>
               {toggleDown}
             </span>
           )
         )}
       </div>
         {isOpen && (
-          <div className={`p-2 ${accordionStyle.contentBgColor}`}>
+          <div className={`p-2`}>
             {imageUrl && (
               <img
                 src={imageUrl}
@@ -78,11 +61,11 @@ const AccordionItem = ({
                 className={`mb-2 rounded-xl w-full ${accordionStyle.imageHeight}`}
               />
             )}
-            <p
-              className={`${accordionStyle.contentColor} ${accordionStyle.contentSize} text-justify`}
+            <span
+              className={`${accordionStyle.contentSize} text-justify leading-6 font-medium`}
             >
               {content}
-            </p>
+            </span>
           </div>
         )
       }

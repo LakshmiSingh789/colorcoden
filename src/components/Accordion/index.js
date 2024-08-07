@@ -5,14 +5,6 @@ import { toggleDown, toggleUp } from "../../constants";
 
 const Accordion = ({
   items,
-  headerBgColor = "blue",
-  headerBgColorStrength = "400",
-  accordionTitleColor = "white",
-  accordionTitleColorStrength = "",
-  contentBgColor = "gray",
-  contentBgColorStrength = "100",
-  contentColor = "black",
-  contentColorStrength = "",
   contentSize = "20",
   headerSize = "40",
   accordionWidth = "800",
@@ -54,14 +46,6 @@ const Accordion = ({
               : openIndex === index
           }
           onToggle={handleToggle}
-          headerBgColor={headerBgColor}
-          headerBgColorStrength={headerBgColorStrength}
-          accordionTitleColor={accordionTitleColor}
-          accordionTitleColorStrength={accordionTitleColorStrength}
-          contentBgColor={contentBgColor}
-          contentBgColorStrength={contentBgColorStrength}
-          contentColor={contentColor}
-          contentColorStrength={contentColorStrength}
           contentSize={contentSize}
           headerSize={headerSize}
           imageHeight={imageHeight}

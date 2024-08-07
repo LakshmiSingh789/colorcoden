@@ -12,8 +12,6 @@ const ProductDetail = () => {
     const product = products.find((p) => p.id === id);
     const productDetail = productDetails.find((p) => p.id === id);
 
-    console.log(productDetail);
-
     if (!product) {
         return <div>Product not found</div>;
     }
@@ -33,7 +31,7 @@ const ProductDetail = () => {
         return productDetail.details.map((item) => ({
           ...item,
           content: (
-            <ul>
+            <ul className='productlist list-disc'>
               {item.content.split("\n").map((line, index) => (
                 <li key={index}>{line}</li>
               ))}
@@ -57,21 +55,13 @@ const ProductDetail = () => {
              <Carousel
                 images={productDetail.images}
                 height={500}
-                width="70%"
+                width="500px"
                 navigationDots={false}
                 leftIcon={"<"}
                 rightIcon={">"}
               />
                 <Accordion
                 items={productDetailsAccordion()}
-                headerBgColor="pink"
-                headerBgColorStrength="200"
-                accordionTitleColor="black"
-                accordionTitleColorStrength=""
-                contentBgColor="white"
-                contentBgColorStrength="700"
-                contentColor="amber"
-                contentColorStrength="900"
                 headerSize="20"
                 contentSize="18"
                 accordionWidth="500"

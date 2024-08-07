@@ -30,7 +30,7 @@ const ProductDetail = () => {
         return productDetail.details.map((item) => ({
             ...item,
             content: (
-                <ul className='productlist list-disc'>
+                <ul className="productlist list-disc">
                     {item.content.split("\n").map((line, index) => (
                         <li key={index}>{line}</li>
                     ))}
@@ -39,8 +39,17 @@ const ProductDetail = () => {
         }));
     };
 
+    const getBackgroundColor = (type) => {
+        switch (type) {
+            case 'kids':
+                return 'bg-sky-300';
+            case 'chips':
+                return 'bg-green-400';
+        }
+    };
+
     return (
-        <div className='ml-28 mt-10'>
+        <div className={`${getBackgroundColor(productDetail.type)} pl-28 pt-10 p-5`}>
             <Breadcrumb
                 items={breadCrumbItems}
                 separator="/"

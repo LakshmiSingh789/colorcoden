@@ -517,7 +517,7 @@ export const productDetails = [
     }, 
     {
         id: "plant-based-biotin",
-        type:"plants",
+        type:"adult",
         images: ["https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/07/Biotin-1-opt.jpeg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/07/Biotin-2-opt.jpeg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/07/Biotin-3-opt.jpeg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/07/biotin-4-new-opt.jpeg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/07/biotin-nutrientes-opt.jpeg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/07/1.4-opt.jpg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/05/Biotin-6-1-scaled.jpg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2022/05/Untitled-design-30.png" ],
         details: [
             {
@@ -552,7 +552,7 @@ export const productDetails = [
     }, 
     {
         id: "supergreens",
-        type:"plants",
+        type:"adult",
         images: ["https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/02/supergreens.001.jpeg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/02/Supergreens.002.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/02/Supergreens.003.png", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/02/supergreeeeens.001.jpeg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/02/supergreeeeens.002.jpeg", "https://cdn.shortpixel.ai/spai/q_lossy+ex_1+ret_img+to_webp/originnutrition.in/wp-content/uploads/2023/02/Supergreens.007.png" ],
         details: [
             {

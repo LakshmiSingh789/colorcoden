@@ -55,8 +55,8 @@ const ProductDetail = () => {
                 separator="/"
                 onLinkClick={handleBreadcrumbClick}
                 size="20"
-                linkedColor="green"
-                linkedColorStrength="500"
+                linkedColor="amber"
+                linkedColorStrength="900"
                 openedColor="black"
                 openedColorStrength="600"
             />

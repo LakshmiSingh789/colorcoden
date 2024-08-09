@@ -2,14 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaUser, FaShoppingCart } from 'react-icons/fa';
 import '../Styles/header.css';
-import logo from '../assets/logo.png';
+import {useLocation} from 'react-router-dom';
+import originLogo from '../assets/originLogo.svg';
 
 const Header = () => {
+
+    const location = useLocation();
+
     return (
-        <div className="header-container">
+        <div className={`${location.pathname === '/' ? 'header-visible' : 'header-container'}`}>
             <nav className="header-nav">
                 <div className="header-links">
-                    <img src={logo} alt="logo" className="header-logo" />
+                    <img src={originLogo} alt="logo" className="header-logo" />
                     <Link to="/shop" className="header-link">SHOP</Link>
                     <Link to="/aboutus" className="header-link">ABOUT US</Link>
                     <Link to="/recipes" className="header-link">RECIPES</Link>
